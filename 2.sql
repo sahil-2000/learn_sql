@@ -6,7 +6,7 @@ AND (emp_no NOT BETWEEN 10004 AND 10012);
 SELECT distinct * FROM employees
 WHERE gender='F' AND (hire_date>='2000-01-01');
 
-
+-- USING AGGRIGATE FUNCTION ALONG WITH GROUP BY 
 SELECT COUNT(emp_no) FROM employees
 GROUP BY first_name;
 
